@@ -19,6 +19,12 @@ df.write.parquet("hdfs://sdatalakedev/benchmarks/test-simplecsv.parquet")
 
 spark.read.parquet("hdfs://sdatalakedev/benchmarks/test-simplecsv.parquet").show(5,false)
 
+##### Write to a single output file
+
+df.coalesce(1).write.parquet("hdfs://sdatalakedev/benchmarks/test-simplecsv-single.parquet")
+
+spark.read.parquet("hdfs://sdatalakedev/benchmarks/test-simplecsv-single.parquet").show(5,false)
+
 
 ### Screenshot
 ![spark2 shell](spark2-shell.JPG "spark2 shell")
