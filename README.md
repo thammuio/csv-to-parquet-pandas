@@ -5,7 +5,7 @@ We are using python 3.6.x
 
 python3.6 csv-to-parquet.py csv_input_path parquet_output_path
 
-example: python3.6 csv-to-parquet.py /data/csv-to-parquet/test-simple.csv /data/csv-to-parquet/test-simple-csv.parquet
+*example:* python3.6 csv-to-parquet.py /data/csv-to-parquet/test-simple.csv /data/csv-to-parquet/test-simple-csv.parquet
 
 
 ## Install Python 3.6 on CentOS7
